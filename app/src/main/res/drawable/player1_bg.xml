@@ -1,0 +1,16 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background color for the entire layout -->
+    <item android:drawable="@android:color/white" />
+
+    <!-- Border for the game board -->
+    <item>
+        <shape
+            android:shape="rectangle">
+            <solid android:color="#9ADAED" /> <!-- Border color -->
+            <stroke
+                android:width="2dp"
+                android:color="#47B7D8" />
+        </shape>
+
+    </item>
+</layer-list>

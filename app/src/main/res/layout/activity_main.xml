@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:paddingBottom="5dp"
+    android:id="@+id/mainBg"
+    android:background="@drawable/player1_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0:0"
+            android:id="@+id/scoreBoard"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="30sp"/>
+    </LinearLayout>
+    <!-- Game Board -->
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="622dp"
+        android:layout_above="@+id/resetButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="29dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:foregroundGravity="top">
+
+        <!-- Row 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button00"
+                style="@style/GameButton"
+                android:text=""
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:contentDescription="buttonReset"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button01"
+                style="@style/GameButton"
+                android:text=""
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:contentDescription="buttonXO" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button02"
+                style="@style/GameButton"
+                android:text=""
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:contentDescription="buttonXO"/>
+        </LinearLayout>
+
+        <!-- Row 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button10"
+                style="@style/GameButton"
+                android:text=""
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:contentDescription="buttonXO"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button11"
+                style="@style/GameButton"
+                android:text=""
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:contentDescription="buttonXO"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button12"
+                style="@style/GameButton"
+                android:text=""
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:contentDescription="buttonXO" />
+        </LinearLayout>
+
+        <!-- Row 3 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button20"
+                style="@style/GameButton"
+                android:text=""
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:contentDescription="buttonXO" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button21"
+                style="@style/GameButton"
+                android:text=""
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:contentDescription="buttonXO" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button22"
+                style="@style/GameButton"
+                android:text=""
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:contentDescription="buttonXO" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Reset Button -->
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/resetButton"
+        style="@style/ResetButton"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Reset Game" />
+
+    <!-- Settings Button (Second, Side by Side) -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/settingsButton"
+        style="@style/SettingsButton"
+        android:layout_alignBaseline="@id/resetButton"
+        android:layout_marginEnd="125dp"
+        android:layout_toStartOf="@+id/resetButton"
+        android:text="Settings"
+        android:contentDescription="buttonSetting"/>
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Define a custom style for the Tic Tac Toe game buttons -->
+    <style name="GameButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/rounded_radius</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/custom_button_text_color</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+
+    <style name="NightButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#FFFFFF</item> <!-- Text color for night mode -->
+        <item name="android:background">#000000</item> <!-- Background color for night mode -->
+        <item name="android:gravity">center</item> <!-- Text alignment -->
+        <item name="android:padding">8dp</item> <!-- Padding around the text -->
+        <!-- Add other button styling attributes for night mode as needed -->
+    </style>
+
+
+    <style name="ResetButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#FFFFFF</item> <!-- Text color -->
+        <item name="android:background">@drawable/reset_button_background</item><!-- Button background -->
+        <item name="android:layout_marginTop">16dp</item> <!-- Adjust top margin as needed -->
+        <item name="android:padding">3dp</item>
+    </style>
+    <style name="SettingsButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#FFFFFF</item> <!-- Text color -->
+        <item name="android:background">@drawable/setting_button</item> <!-- Button background -->
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:padding">3dp</item>
+    </style>
+
+
+</resources>
